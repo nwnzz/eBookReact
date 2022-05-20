@@ -2,13 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import './ToggleSwitch.scss';
 
-/*
-Toggle Switch Component
-Note: id, checked and onChange are required for ToggleSwitch component to function.
-The props name, small, disabled and optionLabels are optional.
-Usage: <ToggleSwitch id="id" checked={value} onChange={checked => setValue(checked)}} />
-*/
-
 const ToggleSwitch = ({ id, name, checked, onChange, optionLabels, small, disabled }) => {
 
   return (
@@ -46,7 +39,6 @@ const ToggleSwitch = ({ id, name, checked, onChange, optionLabels, small, disabl
     );
 }
 
-// Set optionLabels for rendering.
 ToggleSwitch.defaultProps = {
   optionLabels: ["Yes", "No"],
 };
